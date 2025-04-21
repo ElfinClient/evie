@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(255, 245, 240);
+}
+.footer {
+    background-color: rgb(124, 31, 31);
+    position: sticky;
+    bottom: 0rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem;
+    z-index: 1000000000000000000000000000;
+}
+.footer img {
+    width: 9%;
+    padding: 0.6rem;
+}
+
+/* FIRST BIT */
+
+#dearevie {
+    background-color: rgb(134, 34, 34);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 100000000000000000000000000000000000000000000000000;
+    cursor: pointer;
+}
+
+
+.box {
+    border: solid 1px black;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box h2 {
+    color: rgb(187, 51, 51);
+    font-size: 3rem;
+    font-family: monospace;
+}
+.box a {
+    text-decoration: wavy line-through rgb(124, 26, 26) 3px;
+}
+
+/* MEMORIES */
+
+.images {
+    width: 50%;
+    position: absolute;
+}
+
+.hero1 {
+    left: 0%;
+    top: 15%;
+}
+.hero2 {
+    right: 5%;
+    top: 20%;
+}
+.hero3 {
+    right: 10%;
+    bottom: 15%;
+}
+.hero4 {
+    left: 30%;
+    bottom: 40%;
+}
+.hero5 {
+    left: 15%;
+    bottom: 30%;
+}
+#memorieshero {
+    height: 100vh;
+}
+
+#memorieshero h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000000000000000000;
+}
+
+#memorieshero h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000000000000000000;
+    background-color: black;
+    padding: 1rem;
+    color: white;
+    background: linear-gradient(to bottom, rgba(119, 25, 25, 0), rgba(119, 25, 25, 0.6) 20%, rgba(119, 25, 25, 0.8) 50%, rgba(119, 25, 25, 0.6) 80%, rgba(119, 25, 25, 0));
+}
+
+.memory {
+    height: 60rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.memory h4 {
+    padding: 2rem;
+    background-color: rgba(153, 45, 112, 0.5);
+}
+
+.memory img {
+    position: absolute;
+    width: 100%;
+    height: 60rem;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#bellaphoto {
+    object-fit: fill;
+}
+
+/* NOTES */
+
+#note {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80vh;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: solid 1px black;
+}
+
+#note div img {
+    width: 6rem;
+}
+#note button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+#note div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 2rem;
+}
+
+#note h5 {
+    width: 100%;
+    font-size: 1rem;
+    color: rgb(187, 51, 51);
+    font-family: monospace;
+    text-align: right;
+    margin-right: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+#note p {
+    padding: 1rem;
+}
+
+#note #nodoublesbutton {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgb(187, 51, 51, 0.2);
+}
+
+
+
+@media only screen and (max-width: 580px) {
+    .footer img {
+        width: 15%;
+        padding: 0.6rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 400px) {
+    .footer img {
+        width: 20%;
+        padding: 0.6rem;
+    }
+    #note #nodoublesbutton {
+        bottom: 3%;
+    }
+    #note div {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 42%;
+    }
+    #note {
+        justify-content: start;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .footer img {
+        width: 30%;
+        padding: 0.6rem;
+    }
+    #note h5 {
+        width: 80%;
+    }
+    #note #nodoublesbutton {
+        font-size: 0.68rem;
+    }
+}
