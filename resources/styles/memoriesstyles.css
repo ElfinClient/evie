@@ -11,14 +11,163 @@ body {
     flex-wrap: nowrap;
 }
 
+/* Memorieshero */
+
 #memorieshero img {
-    width: 1rem !important;
+    position: absolute;
+    max-width: 40%;
+    height: auto;
 }
+.hero1 {
+    bottom: 10%;
+    right: 30%;
+}
+.hero2 {
+    top: 4%;
+    left: 14%;
+}
+.hero3{
+    bottom: 7%;
+    right: 50%;
+}
+.hero4 {
+    bottom: 50%;
+    right: 16%;
+}
+.hero5 {
+    bottom: 40%;
+    left: 20%;
+}
+
 #memorieshero {
     display: flex;
     flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(246, 219, 255);
 }
-.memory {
+#memorieshero h4 {
+    max-width: 80vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: blueviolet;
+    height: auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    z-index: 1000;
+    color: rgb(228, 31, 31);
+}
+
+
+/* Memories */
+
+#memoriescontainer {
+    margin-left: 100vw;
+    width: 400vw;
+    height: 100vh;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+    background-color: aquamarine;
+}
+#memoriescontainer h2 {
+    width: 400vw;
+    color: transparent;
+}
+
+.memory {
+    border: solid 1px brown;
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    transform-origin: center; /* Ensure scaling happens from the center */
+
+}
+.memory:hover {
+    transform: scale(1.5); /* Scale the element evenly (e.g., 1.33 = 33% larger) */
+    border: solid 2px blueviolet;
+}
+
+.memory::before {
+    content: ""; /* Required for pseudo-elements */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/heart.png);
+    background-color: blueviolet; /* Overlay */
+    transition: opacity 0.5s ease-in-out; /* Smooth fade effect */
+    z-index: 1; /* Ensure it appears above the image */
+}
+
+.memory:hover::before {
+    opacity: 0; /* Fade out the overlay on hover */
+}
+
+.memory img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    height: auto;
+}
+.memory h4 {
+    padding: 1rem;
+    font-size: 0.6rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    color: rgb(228, 31, 31);
+}
+.memory h4:hover {
+    font-size: 1.2rem;
+    transition: all 0.5s ease-in-out;
+    color: white;
+    background-image: none;
+}
+
+
+
+
+.memory1 {
+    top: 10%;
+    left: 5%;
+}
+.memory2 {
+    top: 20%;
+    left: 25%;
+}
+.memory3 {
+    top: 30%;
+    left: 45%;
+}
+.memory4 {
+    top: 40%;
+    left: 65%;
+}
+.memory4 img {
+    height: 100%;
+}
+.memorymore {
+    top: 50%;
+    left: 85%;
 }
