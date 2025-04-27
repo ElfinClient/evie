@@ -90,7 +90,7 @@ body {
     position: relative;
     z-index: 10000;
     background-color: white;
-    background-image: url(../images/arrowbackground.png);
+    background-image: url(../images/arrowbackgroundfixed.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -106,17 +106,23 @@ body {
     position: absolute;
     transition: all 0.5s ease-in-out;
     transform-origin: center; /* Ensure scaling happens from the center */
+    border-radius: 0.7rem;
 
 }
 .memory:hover, .memory:active {
     transform: scale(1.5); /* Scale the element evenly (e.g., 1.33 = 33% larger) */
-    border: solid 2px blueviolet;
+    border: solid 2px rgb(218, 183, 27);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional shadow for depth */
+}
+.memory:hover > h4, .memory:active > h4 {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 .memory:hover > img, .memory:active > img {
     display: inline-block;
 }
 .memory img {
     display: none;
+    border-radius: 0.6rem;
 }
 
 .memory::before {
