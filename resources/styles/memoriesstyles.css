@@ -9,6 +9,10 @@ body {
     flex-direction: row;
     height: 100vh;
     flex-wrap: nowrap;
+    overflow-y: hidden;
+}
+body::-webkit-scrollbar {
+    z-index: 1000000000000000000000000000000;
 }
 
 #bodybackground {
